@@ -17,7 +17,7 @@ int main(){
     printf("CARTA1: Informe o nome da cidade: \n");
     scanf("%s", nome_cidade);
 
-    printf("(CARTA1: Informe o numero de habitantes desta cidade: \n)");
+    printf("CARTA1: Informe o numero de habitantes desta cidade: \n");
     scanf("%d", &populacao);
 
     printf("CARTA1: Informe a área em km²: \n");
@@ -38,7 +38,7 @@ int main(){
     printf("CARTA2: Informe o nome da cidade: \n");
     scanf("%s", &cidade2);
 
-    printf("(CARTA2: Informe o numero de habitantes desta cidade: \n)");
+    printf("CARTA2: Informe o numero de habitantes desta cidade: \n");
     scanf("%d", &populacao2);
 
     printf("CARTA2: Informe a área em km²: \n");
@@ -49,6 +49,9 @@ int main(){
 
     printf("CARTA2: Informe a quantidade de pontos turísticos da cidade: \n");
     scanf("%d", &pts_turisticos2);
+
+    float pib_percap1 = pib / populacao;
+    float pib_percap2 = pib2 / populacao2;
 
     printf("\nCarta 1\n");
     printf("Estado: %c\n", estado);
